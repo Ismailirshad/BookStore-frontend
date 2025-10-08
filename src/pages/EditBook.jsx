@@ -16,7 +16,7 @@ function EditBook() {
 
     useEffect(() => {
         setLoading(true)
-        axios.get(`http://localhost:5000/books/${id}`)
+        axios.get(`https://book-store-backend-khaki.vercel.app/books/${id}`)
             .then((response) => {
                 setAuthor(response.data.author)
                 setTitle(response.data.title)

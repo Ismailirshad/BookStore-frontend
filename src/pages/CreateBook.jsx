@@ -20,7 +20,7 @@ function CreateBook() {
             publishYear,
         }
         setLoading(true)
-        axios.post('http://localhost:5000/books', data)
+        axios.post('https://book-store-backend-khaki.vercel.app/books', data)
             .then(() => {
                 setLoading(false);
                 enqueueSnackbar("Book Created Successfully", { variant: 'success' })
